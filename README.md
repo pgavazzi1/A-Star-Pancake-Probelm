@@ -108,34 +108,21 @@ run:
 
 
 
-Asumptions/Comments:
-    - Each node only has 9 children from flipping indexs 1-8, this is because 
-      flippling the 9th index (the top most one) will not make a different 
-      pancake stack from the one we are already on (and would increase the
-      total cost anyway) so I never bothered to create that child
+## Asumptions/Comments:
+Each node only has 9 children from flipping indexs 1-8, this is because flippling the 9th index (the top most one) will not make a different pancake stack from the one we are already on (and would increase the total cost anyway) so I never bothered to create that child
       
-    - I made the correct for of pancakes in the array be [10, 9, 8, 7, 6, 5, 
-      4, 3, 2, 1], so it is techincally in reverse sorted order
-      
-    - For the UCS algorithm, I used the same Node class to implment my 
-      algorithm. Since the Node class had a int that kept track of the nodes
-      heuristic cost, I set that value to 0 for every node when running UCS
-     
-    - Needed to include a __lt__ comparison overload as part of my node class
-      becasue the priorirt queue was trying to compare two nodes if their 
-      prioritys were equal. Thus I create the function to get rid of that 
-      error
-
-
-Acknowledgements:
-   
-    I used the following website to give me a refresher on how to implement a
-    priority queue since I have never done it in python before: 
-    https://www.educative.io/edpresso/what-is-the-python-priority-queue
+I made the correct for of pancakes in the array be [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], so the correct order is techincally in reverse sorted order
     
-    I used another website to help me compare figure our how to compare two 
-    objects since the priority queue was resorting to that:
-    https://portingguide.readthedocs.io/en/latest/comparisons.html
+For the UCS algorithm, I used the same Node class to implment my algorithm. Since the Node class had a int that kept track of the nodes heuristic cost, I set that value to 0 for every node when running UCS
+
+
+
+## Acknowledgements:
+   
+I used the following website to give me a refresher on how to implement a priority queue since I have never done it in python before: https://www.educative.io/edpresso/what-is-the-python-priority-queue
+    
+I used another website to help me compare figure our how to compare two 
+objects since the priority queue was resorting to that: https://portingguide.readthedocs.io/en/latest/comparisons.html
 
 
 Testing:  

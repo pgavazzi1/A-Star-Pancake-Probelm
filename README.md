@@ -31,53 +31,21 @@ The will take a lot loneger and find a correct answer. To see impelmentation of 
        
     python ucs_pancake.py
 
-        
 Although I have written an impelmentation for this, I must warn that it runs very slowly and by my calculations it takes a lot longer to run than the A* solution. So it is not the most efficant program in the world and the a* runs much faster and is more efficant. It is really neat to see how a simple heuristic function actually helps the algorithm find were it needs to go.
+
+
+
+
+## Interacting with Program: 
+To run the a* program, run the pancake_fliper.py and follow these instructions:
     
-
-
-
-
-Files:
-
-  pancake_fliper.py:
-    Contains the implementation for the A* algorithm that will solve the 
-    pancake problem. Also conatins the definition and implementation for the
-    node class that holds the pancake stack as well as facts about that 
-    particular stack. 
-    
-  ucs_pancake.py:
-    Contains the implementation for the UCS algorithm that will solve the 
-    pancake problem. Takes forever to run sometimes so not worth wasting your
-    time sitting for more than a minute or two for an answer (I know, I waited
-    an hour for it to stop and it kept going)
-
-  a*_test.py:
-    Contains unit test for some functions in my search implementation.
-
-
-
-
-
-run: 
-    To run the a* program, run the pancake_fliper.py and follow these 
-    instructions:
-    
-     -  The program will ask for the user to input pancakes into the stack one
-        by one, so enter a correct number and the program will move on. If one
-        enters an incorrect size or one that is already in the stack, then
-        the program will ask for another number until it recives correct input
+The program will ask for the user to input pancakes into the stack one by one, so enter a correct number and the program will move on. If one enters an incorrect size or one that is already in the stack, then the program will ask for another number until it recives correct input
         
-     -  After the stack is full, it will produce a count down to the Search
-        and then will preform the search. It will print out every stack it is
-        currently exploring took
+After the stack is full, it will produce a count down to the Search and then will preform the search. It will print out every stack it is currently exploring took
     
-     -  If it has reached the goal or the frontier is empty, it will either
-        print out a message about the ideal path to the goal or qill print
-        one about it's failure to reach the goal, then the program terminates
-     
-    To run the USC program, run the ucs_pancake.py and follow these the same
-    instructions above
+If it has reached the goal or the frontier is empty, it will either print out a message about the ideal path to the goal or qill print one about it's failure to reach the goal, then the program terminates.
+
+Note: To run the USC program, run the ucs_pancake.py and follow these the same instructions above.
 
 
 
@@ -103,14 +71,9 @@ objects since the priority queue was resorting to that: https://portingguide.rea
 ## Testing:  
 I tested the A* program overall by playing around and pluggin different values in different orders. I have put a couple of sample orders and they are orginized by length of time it took for the calculation to complete
     
-Easy examples
-          - [10, 9, 8, 7, 6, 1, 2, 3, 4, 5]
-          - [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-          - [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-          - [4, 5, 6, 3, 10, 2, 7, 8, 1, 9]
+Easy examples: [10, 9, 8, 7, 6, 1, 2, 3, 4, 5], [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [4, 5, 6, 3, 10, 2, 7, 8, 1, 9]
           
-Hard examples
-          - [2, 5, 6, 7, 8, 9, 3, 1, 10, 4]
+Hard examples: [2, 5, 6, 7, 8, 9, 3, 1, 10, 4]
           - [7, 9, 8, 2, 10, 6, 3, 4, 1, 5]
           - [7, 6, 3, 1, 10, 9, 8, 4, 2, 5]
           - [2, 3, 4, 9, 10, 7, 8, 1, 5, 6]
@@ -118,8 +81,5 @@ Hard examples
           
           
 To test the UCS program, I ran simpler problems to it and checked them against the A*'s soltuions. Here are some solutions to trying
-          - [10, 9, 8, 7, 6, 1, 2, 3, 4, 5]
-          - [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-          - [10, 9, 8, 7, 6, 5, 4, 1, 3, 2]
-          - [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-          - [1, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+ 
+ UCS examples: [10, 9, 8, 7, 6, 1, 2, 3, 4, 5], [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], [10, 9, 8, 7, 6, 5, 4, 1, 3, 2], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 10, 9, 8, 7, 6, 5, 4, 3, 2]

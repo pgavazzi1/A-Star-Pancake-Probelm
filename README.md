@@ -1,5 +1,5 @@
 # A-Star-Pancake-Probelm
-A Project for COMP 131: Artificial Intelligence
+An A star algorithm finds the fastest path from any unordered stack of 10 pancakes to an ordered one where the largest pancakes are at the bottom of the stack and the largest are at the top. 
 
 ## Search Problem Definition:
 

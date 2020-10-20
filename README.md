@@ -1,7 +1,7 @@
 # A-Star-Pancake-Probelm
 A Project for COMP 131: Artificial Intelligence
 
-Assignment Questions:
+## Search Problem Definition:
     1) Search Problem Definition
     
         - Inital State: The pancake stack we start out on. Will not have a

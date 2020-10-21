@@ -20,28 +20,22 @@ Heuristic Function: I implmeneted the gap heuristic function. For any given panc
 To see the a* impelmentation, run:
     
     python pancake_fliper.py 
-
-        
-## Uniform Cost Search Solution
-The will take a lot loneger and find a correct answer. To see impelmentation of ucs, run:
-       
-    python ucs_pancake.py
-
-Although I have written an impelmentation for this, I must warn that it runs very slowly and by my calculations it will take a lot longer to run than the A* solution. So it is not the most efficant program in the world and the a* runs much faster and is more efficant. It is really neat to see how a simple heuristic function actually helps the algorithm find were it needs to go.
-
-
-
-
-## Interacting with Program: 
-To run the a* program, run the pancake_fliper.py and follow these instructions:
     
 The program will ask for the user to input pancakes into the stack one by one, so enter a correct number and the program will move on. If one enters an incorrect size or one that is already in the stack, then the program will ask for another number until it recives correct input
         
-After the stack is full, it will produce a count down to the Search and then will preform the search. It will print out every stack it is currently exploring took
+After the stack is full, it will produce a count down to the Search and then will preform the search. It will print out every stack it is currently exploring.
     
-If it has reached the goal or the frontier is empty, it will either print out a message about the ideal path to the goal or qill print one about it's failure to reach the goal, then the program terminates.
+If it has reached the goal or the frontier is empty, it will either print out a message with the ideal path to the goal or will print one about a failure to reach the goal.
 
 Note: To run the USC program, run the ucs_pancake.py and follow these the same instructions above.
+        
+## Uniform Cost Search Solution
+The will take a lot loneger and find a correct answer. Run:
+       
+    python ucs_pancake.py
+
+To interact with the USC program, follow these the same instructions above. Although I have written an impelmentation for this, I must warn that it runs very slowly and by my calculations it will take a lot longer to run than the A* solution. So it is not the most efficant program in the world and the a* runs much faster and is more efficant. It is really neat to see how a simple heuristic function actually helps the algorithm find were it needs to go.
+
 
 
 

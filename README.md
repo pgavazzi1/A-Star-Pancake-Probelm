@@ -1,23 +1,19 @@
 # A-Star-Pancake-Probelm
-An A star algorithm finds the fastest path from any unordered stack of 10 pancakes to an ordered one where the largest pancakes are at the bottom of the stack and the largest are at the top. 
+An A star algorithm finds the fastest path from any unordered stack of 10 pancakes to an ordered one where the largest pancakes are at the bottom of the stack and the smallest are at the top. 
 
 ## Search Problem Definition:
 
-Inital State: The pancake stack we start out on. Will not have a parent node and will have a path cost of zero.
+Inital State: The pancake stack that we will start out on. Will start with have a path cost of zero since we have preformed no flips yet.
                 
-Actions Available: Can preform a flip of any index in its stack (Except for the last index because of you flip that, you just get the same node again with a higher cost function for the stack overall)
+Actions Available: Can preform a flip of any index in the stack (Except for the top index because if you flip that, you just get the same pancake stack again with a higher path cost function)
                              
-        
-Effects of Actions: Will put the nodes in reverse order from the index we want to start the flip at all the way to the end of the arry
+Effects of Actions: Will put the nodes in reverse order from the index we want to start the flip at all the way to the top of the pancake stack
         
 Goal test: Compare the current nodes pancake stack to the one we are Targeting: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]. If they are the same we return true, else we will return false.
-        
-
-        
          
 Cost Function: I implmeneted a cost function where the algorithm paid one cost for each flip it made. That is to say, the cost of the path to any node is the same number of flips it took to get to that node. This can be stated in the equation: Cost = all_previous_flips + 1 
     
-Heuristic Function: I implmeneted the gap heuristic function that was given to us. For any given pancake in the stack, if the pancake below it differes by the size of our current cake by more than 1, then we add a one to  the hueristic cost of the stack as a whole. I even compare the bottom pancake to the size of the plate, which I have set to a size of 11.
+Heuristic Function: I implmeneted the gap heuristic function. For any given pancake in the stack, if the pancake below it differes by the size of our current cake by more than 1, then we add a one to  the hueristic cost of the stack as a whole. I also compare the bottom pancake to the size of the plate, which I have set to a size of 11.
                            
    
 ## Running The Script
@@ -26,12 +22,12 @@ To see the a* impelmentation, run:
     python pancake_fliper.py 
 
         
-## Unifor Cost Search Solution
+## Uniform Cost Search Solution
 The will take a lot loneger and find a correct answer. To see impelmentation of ucs, run:
        
     python ucs_pancake.py
 
-Although I have written an impelmentation for this, I must warn that it runs very slowly and by my calculations it takes a lot longer to run than the A* solution. So it is not the most efficant program in the world and the a* runs much faster and is more efficant. It is really neat to see how a simple heuristic function actually helps the algorithm find were it needs to go.
+Although I have written an impelmentation for this, I must warn that it runs very slowly and by my calculations it will take a lot longer to run than the A* solution. So it is not the most efficant program in the world and the a* runs much faster and is more efficant. It is really neat to see how a simple heuristic function actually helps the algorithm find were it needs to go.
 
 
 
@@ -81,11 +77,11 @@ I tested the A* program overall by playing around and pluggin different values i
 
     Hard examples: 
     
-      [2, 5, 6, 7, 8, 9, 3, 1, 10, 4]
-      [7, 9, 8, 2, 10, 6, 3, 4, 1, 5]
-      [7, 6, 3, 1, 10, 9, 8, 4, 2, 5]
-      [2, 3, 4, 9, 10, 7, 8, 1, 5, 6]
-      [4, 5, 8, 9, 6, 7, 3, 10, 2, 1]
+              [2, 5, 6, 7, 8, 9, 3, 1, 10, 4]
+              [7, 9, 8, 2, 10, 6, 3, 4, 1, 5]
+              [7, 6, 3, 1, 10, 9, 8, 4, 2, 5]
+              [2, 3, 4, 9, 10, 7, 8, 1, 5, 6]
+              [4, 5, 8, 9, 6, 7, 3, 10, 2, 1]
           
           
 To test the UCS program, I ran simpler problems to it and checked them against the A*'s soltuions. Here are some solutions to trying

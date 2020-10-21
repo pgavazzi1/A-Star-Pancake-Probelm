@@ -26,8 +26,6 @@ The program will ask for the user to input pancakes into the stack one by one, s
 After the stack is full, it will produce a count down to the Search and then will preform the search. It will print out every stack it is currently exploring.
     
 If it has reached the goal or the frontier is empty, it will either print out a message with the ideal path to the goal or will print one about a failure to reach the goal.
-
-Note: To run the USC program, run the ucs_pancake.py and follow these the same instructions above.
         
 ## Uniform Cost Search Solution
 The will take a lot loneger and find a correct answer. Run:

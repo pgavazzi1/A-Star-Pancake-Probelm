@@ -71,10 +71,16 @@ objects since the priority queue was resorting to that: https://portingguide.rea
 ## Testing:  
 I tested the A* program overall by playing around and pluggin different values in different orders. I have put a couple of sample orders and they are orginized by length of time it took for the calculation to complete
     
-Easy examples: [10, 9, 8, 7, 6, 1, 2, 3, 4, 5], [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [4, 5, 6, 3, 10, 2, 7, 8, 1, 9]
+    Easy examples: 
+    
+              [10, 9, 8, 7, 6, 1, 2, 3, 4, 5]
+              [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+              [4, 5, 6, 3, 10, 2, 7, 8, 1, 9]
 
 
     Hard examples: 
+    
       [2, 5, 6, 7, 8, 9, 3, 1, 10, 4]
       [7, 9, 8, 2, 10, 6, 3, 4, 1, 5]
       [7, 6, 3, 1, 10, 9, 8, 4, 2, 5]
@@ -84,4 +90,9 @@ Easy examples: [10, 9, 8, 7, 6, 1, 2, 3, 4, 5], [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
           
 To test the UCS program, I ran simpler problems to it and checked them against the A*'s soltuions. Here are some solutions to trying
  
- UCS examples: [10, 9, 8, 7, 6, 1, 2, 3, 4, 5], [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], [10, 9, 8, 7, 6, 5, 4, 1, 3, 2], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+    UCS examples: 
+              [10, 9, 8, 7, 6, 1, 2, 3, 4, 5]
+              [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+              [10, 9, 8, 7, 6, 5, 4, 1, 3, 2]
+              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+              [1, 10, 9, 8, 7, 6, 5, 4, 3, 2]

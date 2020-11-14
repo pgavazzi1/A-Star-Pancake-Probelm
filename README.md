@@ -1,4 +1,6 @@
 # A-Star-Pancake-Probelm
+COMP 131, By Patrick Gavazzi (pgavaz01)
+
 An A star algorithm finds the fastest path from any unordered stack of 10 pancakes to an ordered one where the largest pancakes are at the bottom of the stack and the smallest are at the top. 
 
 ## Search Problem Definition:
